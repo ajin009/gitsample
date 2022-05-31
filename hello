@@ -1,4 +1,8 @@
 hello file addedd
 hello,how are you
 i am fine thanks!
+<<<<<<< HEAD
 no !
+=======
+ok thanks!
+>>>>>>> feature

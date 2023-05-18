@@ -1,0 +1,19 @@
+name: pipeline-trigger
+
+on:
+  push:
+    branches:
+    - dev
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "http://34.205.33.232:8080/"
+        user: "ajin"
+        token: ${{ secrets.TOKEN }}
+        job: "new"
